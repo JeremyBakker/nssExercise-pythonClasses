@@ -1,5 +1,5 @@
 class Company(object):
-    """This represents a company in which people work"""
+    """This represents a company in which people work."""
 
     def __init__(self, name, title, start_date):
         self.name = name
@@ -8,35 +8,42 @@ class Company(object):
         self.employees = set()
 
     def get_name(self):
-        """Returns the name of the company"""
+        """Returns the name of the company."""
  
         return self.name
 
 
     def add_employee(self, employee):
+        """Adds an employee to the company."""
+
     	self.employees.add(employee)
 
     def list_employees(self):
+        """Prints a list of the employees in a company."""
+
     	for each in self.employees:
     		print("{} is the {} who works for {}".format(each.name, each.title, self.name) + ".") 
 
 
 class Employee():
-	'''This represents an employee of a company'''
+	"""This represents an employee of a company"""
 	def __init__(self, name, title, start_date):	
 		self.name = name
 		self.title = title
 		self.start_date = start_date
 
 	def get_name(self):
+        """Returns the name of the employee."""
 
 		return self.name
 
 	def get_title(self):
+        """Returns the title of an employee."""
 
 		return self.title
 
 	def get_start_date(self):
+        """Returns the start date of an employee."""
 
 		return self.start_date
 
